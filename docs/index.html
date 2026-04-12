@@ -1,1 +1,150 @@
-test
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【作品名】| AO入試ポートフォリオ</title>
+    <style>
+        /* 基本スタイル */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { border-left: 5px solid #2c3e50; padding-left: 1rem; margin-top: 0; color: #2c3e50; }
+
+        /* 画像・動画エリア */
+        .visual-pc {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* グリッドレイアウト */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-box {
+            background: #f0f2f5;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.8; }
+
+        footer { text-align: center; padding: 2rem; color: #888; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>作品タイトルをここに入力</h1>
+    <p>AO入試提出用作品ポートフォリオ</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <div class="visual-pc">
+            <p style="color:#666;">ここにゲームの紹介動画（YouTube等）や<br>メインキャプチャ画像を配置</p>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" class="btn">ゲームをプレイする / ダウンロード</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>作品概要</h2>
+        <div class="grid">
+            <div class="info-box">
+                <strong>開発期間：</strong><br>202X年X月 〜 202X年X月（約Xヶ月）
+            </div>
+            <div class="info-box">
+                <strong>使用ツール：</strong><br>Unity / C# / Blender / CLIP STUDIO
+            </div>
+            <div class="info-box">
+                <strong>ジャンル：</strong><br>3Dアクションアドベンチャー
+            </div>
+        </div>
+        <p>作品の短いコンセプト説明（例：ターゲット層や、どんな体験をさせたいか）をここに記入します。簡潔に、かつ意欲が伝わる文章を心がけましょう。</p>
+    </section>
+
+    <section>
+        <h2>技術的な工夫・こだわり</h2>
+        <h3>1. 独自のアルゴリズム/システムの構築</h3>
+        <p>「〇〇の処理を軽量化するために、△△な工夫をしました」など、ソースコードの工夫点を記述します。</p>
+        
+        <h3>2. ユーザーエクスペリエンス（UI/UX）</h3>
+        <p>「初心者が迷わないように、視覚的な誘導を〇〇のように配置しました」など、プレイヤー目線での工夫を記述します。</p>
+    </section>
+
+    <section>
+        <h2>課題と解決</h2>
+        <p><strong>【課題】</strong> 開発中、〇〇というバグ（または設計上の問題）に直面しました。</p>
+        <p><strong>【解決】</strong> 公式ドキュメントを読み込み、△△の手法を試すことで解決しました。この経験から学んだことは〜〜です。</p>
+    </section>
+
+    <section>
+        <h2>ソースコード / GitHub</h2>
+        <p>GitHubのURLや、特に自信のあるクラスの解説などをリンクします。</p>
+        <a href="#" style="color: #2c3e50;">GitHubリポジトリを見る</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 あなたのお名前 - All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
